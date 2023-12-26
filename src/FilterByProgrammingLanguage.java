@@ -1,11 +1,21 @@
-public class FilterByProgrammingLanguage extends ViewAllStudent{
-    void filterByProgrammingLanguage(String key) {
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FilterByProgrammingLanguage {
+    void filterByProgrammingLanguage(String key) throws FileNotFoundException {
+        String path ="C:/Users/Dell/IdeaProjects/student-database-application/src/TextFile/StudentDatabase.txt";
+        File studentDatabaseFile = new File(path);
+        Scanner inputBufferStudent = new Scanner(studentDatabaseFile);
         while (inputBufferStudent.hasNextLine()) {
             String line = inputBufferStudent.nextLine();
             String[] fetchDataStudent = line.split(" ");
-            String[] fetchDataLanguage = fetchDataStudent[2].split(",");
+            String[] fetchDataLanguage = new String[0];
+            if (fetchDataStudent.length >= 2) {
+                fetchDataLanguage = fetchDataStudent[2].split(",");
+            }
 
-            if (containsLanguage(fetchDataLanguage, key)) {
+            if (containsLanguage(fetchDataLanguage, key) && fetchDataStudent.length >= 2) {
                 System.out.println(
                         "Student RollNo :" + fetchDataStudent[0] + "\n" +
                                 "Student Name :" + fetchDataStudent[1] + "\n" +
@@ -13,7 +23,7 @@ public class FilterByProgrammingLanguage extends ViewAllStudent{
                                 "Department :" + fetchDataStudent[3] + "\n" +
                                 "Year :" + fetchDataStudent[4]
                 );
-                System.out.println("\n \n \n");
+                System.out.println();
             }
         }
     }

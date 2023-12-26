@@ -1,10 +1,10 @@
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Scanner;
 
-public class AddStudent extends ViewAllStudent{
-    void addStudent(){
+public class AddStudent{
+    void addStudent() throws FileNotFoundException {
+        String path ="C:/Users/Dell/IdeaProjects/student-database-application/src/TextFile/StudentDatabase.txt";
+        File studentDatabaseFile = new File(path);
         String rollNo,name,programmingSkills,dept,year;
         Scanner addStudentScanner = new Scanner(System.in);
         System.out.print("Enter your RollNo: ");

@@ -1,5 +1,7 @@
-22CC015 Gopinath_S java,c++,python,c CCE_DEPT 2nd_Year
-22CC016 Haribabu_M java,c++,python CCE_DEPT 2nd_Year
-22CC014 Daddy java,python CCE 2
-22dfs fsfs gdfgd dsfs fsfs
-dfgsdg gfsgs fgsfas fgdfa fasdf
+22CC015 GOPINATH_S java,python,c++ CCE 2nd_year
+22CC021 KAMALESH_S java,python,c++,c CCE 2nd_year
+22CC013 GOKUL_K java,c CCE 2nd_year
+22CC014 GOKUL_G java,c,c++ CCE 2nd_year
+22CC016 HARIBABU_M java,python CCE 2nd_year
+22CC001 AFREED_S java,c CCE 2nd_year
+22CC041 RISHAB_S java,c,c++,python CCE 2nd_year

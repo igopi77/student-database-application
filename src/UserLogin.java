@@ -7,7 +7,7 @@ public class UserLogin {
     File adminLoginFile = new File(path);
     UserData data =new UserData();
     String username,password;
-    void userLogin() throws FileNotFoundException {
+    int userLogin() throws FileNotFoundException {
         int flag =0;
         Scanner inputBufferForUserLogin = new Scanner(adminLoginFile);
         Scanner userLoginPageScanner = new Scanner(System.in);
@@ -23,11 +23,13 @@ public class UserLogin {
             if(fetchData[0].equals(data.getUsername()) && fetchData[1].equals(data.getPassword())){
                 System.out.println("-------Login Successful------");
                  flag = 1;
-                break;
+                 return flag;
             }
         }
         if(flag ==0){
             System.out.println("------Login Failed Try Again Later------");
+            return 0;
         }
+        return 0;
     }
 }
