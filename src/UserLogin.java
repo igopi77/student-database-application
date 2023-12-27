@@ -12,11 +12,14 @@ public class UserLogin {
         Scanner inputBufferForUserLogin = new Scanner(adminLoginFile);
         Scanner userLoginPageScanner = new Scanner(System.in);
         System.out.print("Enter your Username :");
+
         username = userLoginPageScanner.nextLine();
         data.setUsername(username);
+
         System.out.print("Enter your Password :");
         password = userLoginPageScanner.next();
         data.setPassword(password);
+
         while (inputBufferForUserLogin.hasNextLine()){
             String line = inputBufferForUserLogin.nextLine();
             String[] fetchData = line.split(" ");
@@ -26,6 +29,7 @@ public class UserLogin {
                  return flag;
             }
         }
+
         if(flag ==0){
             System.out.println("------Login Failed Try Again Later------");
             return 0;

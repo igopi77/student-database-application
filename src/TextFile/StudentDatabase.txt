@@ -3,5 +3,7 @@
 22CC013 GOKUL_K java,c CCE 2nd_year
 22CC014 GOKUL_G java,c,c++ CCE 2nd_year
 22CC016 HARIBABU_M java,python CCE 2nd_year
-22CC001 AFREED_S java,c CCE 2nd_year
+22CC001 AFREED_S java,c,c++,c#,mysql,python CCE 2nd_year
 22CC041 RISHAB_S java,c,c++,python CCE 2nd_year
+22CC049 SIDDHARTHAN_S java,c++,c,python,c# CCE 2nd_year
+22CC002 Ajay_J ask_question,speaker,enjoyment CCE 2nd_year

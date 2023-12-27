@@ -33,6 +33,7 @@ public class Main {
                         modifyStudentObj.modifyStudent();
                         stop = loop.loopForContinue();
                         break;
+
                     case 3:
                         System.out.println("------SEARCH STUDENT BY NAME------");
                         SearchStudent searchStudentByNameObj = new SearchStudent();
@@ -54,6 +55,7 @@ public class Main {
                         System.out.println();
                         stop = loop.loopForContinue();
                         break;
+
                     case 5:
                         System.out.println("------ADD STUDENT------");
                         AddStudent addStudentObj = new AddStudent();
@@ -66,6 +68,7 @@ public class Main {
                         deleteStudentObj.deleteStudent();
                         stop = loop.loopForContinue();
                         break;
+
                     case 7:
                         System.out.println("------SORTING STUDENT------");
                         SortStudent sortStudentObj = new SortStudent();
@@ -79,6 +82,7 @@ public class Main {
                         statisticsObj.statisticsOfStudent();
                         stop = loop.loopForContinue();
                         break;
+
                     case 9:
                         stop = 1;
                         break;

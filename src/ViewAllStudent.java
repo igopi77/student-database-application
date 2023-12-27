@@ -9,6 +9,7 @@ public class ViewAllStudent {
         File studentDatabaseFile = new File(path);
         System.out.println("------STUDENT DETAILS------");
         Scanner inputBufferStudent = new Scanner(studentDatabaseFile);
+
         while(inputBufferStudent.hasNextLine()){
             String line = inputBufferStudent.nextLine();
             String[] fetchData = line.split(" ");

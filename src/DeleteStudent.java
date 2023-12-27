@@ -17,6 +17,7 @@ public class DeleteStudent  {
             String line = inputBufferStudent.nextLine();
             linesFromFile.add(line);
         }
+
         for(int i=0;i<linesFromFile.size();i++){
             String line = linesFromFile.get(i);
             String[] fetchData = line.split(" ");
@@ -26,6 +27,7 @@ public class DeleteStudent  {
                 break;
             }
         }
+
         try (PrintWriter writer = new PrintWriter(new FileWriter(studentDatabaseFile))) {
             for (String line : linesFromFile) {
                 writer.println(line);
@@ -33,5 +35,6 @@ public class DeleteStudent  {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+
     }
 }

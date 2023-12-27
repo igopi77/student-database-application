@@ -43,6 +43,7 @@ public class SortStudent {
                 }
             }
         }
+
         System.out.println("Sorting Students......");
 
         for(String sortedStudent : lines){

@@ -18,6 +18,7 @@ public class ModifyStudent {
             String line = inputBufferStudent.nextLine();
             lines.add(line);
         }
+
         for(int i=0;i<lines.size();i++){
             String line = lines.get(i);
             String[] fetchData = line.split(" ");
@@ -41,6 +42,7 @@ public class ModifyStudent {
                 break;
             }
         }
+
         try (PrintWriter writer = new PrintWriter(new FileWriter(studentDatabaseFile))) {
             for (String line : lines) {
                 writer.println(line);
@@ -48,5 +50,6 @@ public class ModifyStudent {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+
     }
 }
